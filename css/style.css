@@ -5,81 +5,116 @@
     box-sizing: border-box;
     font-family: 'avenir-demi-bold', sans-serif;
 }
-header{
-    top: 0;
-    left: 0;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'avenir-demi-bold', sans-serif;
 }
+header{
+    position: relative;
+    top: 0;
+}
+
 nav{
-    height: 4.1rem;
+    height: 66px;
     width: 100vw;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    top: 0;
+    z-index: 100;
     align-items: center;
-    background-color: rgb(250,204,72);
+    top:0;
+    background-color: #FFCC00;
     position: fixed;
     box-shadow: 0px 1px 7px rgb(0 0 0 / 20%);
-    overflow: hidden;
-    z-index: 100;
 }
 .nav_Image{
-    width: 15vw;
+    width: 210px;
+    height: 100%;
     background-color: white;
+    
 }
 .nav_Image a img{
-    padding-left: 15px;
+    padding-left: 5px;
+    padding-right: 40px;
+    cursor: pointer;
 }
 .nav_content{
     display: flex;
     justify-content: space-between;
+    width: 88%;
+
 }
 .nav_mid_content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
     list-style: none;
 }
+/* .nav_mid */
 .nav_mid_content li a{
     text-decoration: none;
     font-size: .875rem;
-    font-weight: 500;
+    font-weight: bold;
     margin: 1rem;
-    padding: 0.5rem 1.5rem 0.5rem 0.5rem;
     color: black;
     text-transform: uppercase;
 }
-.nav_mid_content li button{
-    height: 45px;
-    width: 150px;
-    border-radius: 2.625rem;
-    background-color: #f36;
-    border: 1px solid #f36;
-    color: white;
-    text-transform: uppercase;
-    font-size: .875rem;
-    font-weight: 550;
-}
+
 .nav_mid_content li a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
-.nav_button button{
-    height: 45px;
-    width: 100px;
-    border-radius: 2.625rem;
+
+.nav-bt{
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+    width: 29%;
+}
+
+.bt_download{
     background-color: #f36;
-    border: 1px solid #f36;
+    height: 2.5rem;
+    width:10rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 50px;
+    border: none;
     color: white;
     text-transform: uppercase;
-    font-size: .875rem;
-    font-weight: 500;
-    margin-left: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
-nav button:hover{
-    transition:.2s ease-in-out;
-    color:black;
-    cursor:pointer
+.bt_download:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.bt_login:hover{
+    color: #000;
+    cursor: pointer;
+}
+
+.bt_login{
+    margin-left: 10px;
+    width: 90px;
+    height: 2.5rem;
+    border-radius: 2.625rem;
+    background-color: #f36;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
 }
 /* /banner/ */
 #pr-banner{
